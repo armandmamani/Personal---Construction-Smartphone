@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="CSS/Tulipan.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>G7B</title>
+</head>
+<body>
+
+
+    <div class="dropdown">
+        <a class="dropbtn" href="index.html">&larr; Projekti</a>
+    </div>
+    <h1>
+        PALASË - G7B
+    </h1>
+
+    <div class="sidenav">
+        <div id="filter-container">
+            <!-- Typology Filter -->
+            <!-- Typology Dropdown -->
+            <select id="typologyFilter">
+                <option value="">Te gjitha tipologjite</option>
+                <option value="1+1">Apartamente 1+1</option>
+                <option value="2+1">Apartamente 2+1</option>
+                <option value="Studio">Studio</option>
+
+            </select>
+
+            <!-- Area Filter -->
+            <input type="number" id="areaFilter" placeholder="Siperfaqe maksimale (m²)">
+            <button id="filtAreaBtn" onclick="filterByArea()">Filter</button>
+
+        </div>
+
+        <div class="tipolBlock">
+            <div class="containerG7B">
+                <button class="tipBtn" id="tipBtnA" onclick="showTableA">SEASIDE IV</button>
+            </div>
+
+            <div class="tipologjiaA_G7B" id="tableA">
+
+                <div></div>
+                <div id="shkallaA">SHKALLA A</div>
+                <div id="shkallaB">SHKALLA B</div>
+
+                <div id="KatiG5">KATI 5</div>
+
+                <div class="divA7">
+                    <button class="planBtn" id="A51">A51</button>
+                </div>
+                <div></div>
+                <div></div>
+
+                <div class="divA7">
+                    <button class="planBtn" id="B51">B51</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="B52">B52</button>
+                </div>
+                <div></div>
+
+                <div id="KatiG4">KATI 4</div>
+
+
+                <div class="divA7">
+                    <button class="planBtn" id="A41">A41</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A42">A42</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A43">A43</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="B42">B42</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="B43">B43</button>
+                </div>
+                <div></div>
+
+                <div id="KatiG3">KATI 3</div>
+
+                <div class="divA6">
+                    <button class="planBtn" id="A31">A31</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A34">A34</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A35">A35</button>
+                </div>
+
+                <div class="divA6">
+                    <button class="planBtn" id="B33">B33</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="B34">B34</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="B36">B36</button>
+                </div>
+
+
+                <div id="KatiG2">KATI 2</div>
+
+
+                <div class="divA6">
+                    <button class="planBtn" id="A23">A23</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A24">A24</button>
+                </div>
+                <div class="divA6">
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="B23">B23</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="B24">B24</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="B26">B26</button>
+                </div>
+
+                <div id="KatiG1">KATI 1</div>
+
+
+                <div class="divA5">
+                    <button class="planBtn" id="A11">A11</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A12">A12</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A13">A13</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="B11">B11</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="B13">B13</button>
+                </div>
+
+                <div id="shkallaC">SHKALLA C</div>
+                <div id="KatiG0">KATI 0</div>
+
+
+                <div class="divA7">
+                    <button class="planBtn" id="C02">C02</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="C03">C03</button>
+                </div>
+                <div class="divA8">
+                    <button class="planBtn" id="C04">C04</button>
+                </div>
+                <div class="divA6">
+                </div>
+                <div class="divA6">
+                </div>
+
+                <div class="divA8">
+                    <button class="planBtn" id="C06">C06</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="imagePart">
+        <div id="shiturShkrimi" class="apartament-plan hidden">
+            SHITUR
+        </div>
+        <div id="rezervuarShkrimi" class="apartament-plan hidden">
+            REZERVUAR
+        </div>
+
+        <div id="fullscreenContainer" class="hidden">
+            <img id="fullscreenImage" src="" alt="Full Screen View">
+        </div>
+
+        <div class="detailsTable" id="plan-container">
+            <table id="plan-table">
+                <thead id="detailsTable">
+                    <tr>
+                        <th>Apartamenti</th>
+                        <th id="aptId"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td class="aparttId">Shkalla</td>
+                    <td class="vleraSip" id="aptScale"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Kati</td>
+                    <td class="vleraSip" id="aptFloor"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Tipologjia</td>
+                    <td class="vleraSip" id="aptTypology"></td>
+                </tr>
+
+                <tr>
+                    <td class="aparttId">Siperfaqe Neto</td>
+                    <td class="vleraSip" id="aptNetArea"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Siperfaqe e perbashket</td>
+                    <td class="vleraSip" id="aptComonArea"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Siperfaqe totale</td>
+                    <td class="vleraSip" id="aptTotalArea"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Siperfaqe verande</td>
+                    <td class="vleraSip" id="aptVerandaArea"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Oborr i gjebert</td>
+                    <td class="vleraSip" id="aptgreenArea"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Siperfaqe Depo</td>
+                    <td class="vleraSip" id="aptstoreArea"></td>
+
+                <tr>
+                    <td class="aparttId">Parking</td>
+                    <td class="vleraSip" id="aptParking"></td>
+                </tr>
+                <tr>
+                    <td class="aparttId">Statusi</td>
+                    <td class="vleraSip" id="status"></td>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+            <img id="display-image" src="" alt="Selected Plan" />
+        </div>
+    </div>
+
+    <script src="JSfolder/G7Bscript.js"></script>
+
+</body>
+</html>

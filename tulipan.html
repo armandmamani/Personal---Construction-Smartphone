@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="CSS/Tulipan.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>TULIPAN</title>
+</head>
+<body>
+    <div class="dropdown">
+        <a class="dropbtn" href="index.html">&larr; Projekti</a>
+    </div>
+    <h1>
+       TULIPAN
+    </h1>
+
+    <div class="sidenav">
+        <div id="filter-container">
+            <!-- Typology Filter -->
+            <!-- Typology Dropdown -->
+            <select id="typologyFilter">
+                <option value="">Te gjitha tipologjite</option>
+                <option value="1+1">Apartamente 1+1</option>
+                <option value="2+1">Apartamente 2+1</option>
+                <option value="3+1">Apartamente 3+1</option>
+            </select>
+
+            <!-- Area Filter -->
+            <input type="number" id="areaFilter" placeholder="Siperfaqe maksimale (m²)">
+            <button id="filtAreaBtn" onclick="filterByArea()">Filter</button>
+
+        </div>
+
+        <div class="tipolBlock">
+            <div id="containerA">
+                <button class="tipBtn" id="tipBtnA" onclick="showTableA">TIPOLOGJIA A</button>
+            </div>
+
+            <div class="tipologjiaA_Tul" id="tableA">
+
+                <div></div>
+                <div id="KatiA0">Kati 0</div>
+                <div id="KatiA1">Kati 1</div>
+                <div id="KatiA2">Kati 2</div>
+                <div id="godA1">GOD-A1</div>
+                <div class="divA1">
+                    <button class="planBtn" id="A1HA1">Ap- HA1</button>
+                </div>
+                <div class="divA1">
+                    <button class="planBtn" id="A1HA2">Ap- HA2</button>
+                </div>
+                <div class="divA1">
+                    <button class="planBtn" id="A1HA3">Ap- HA3</button>
+                </div>
+                <div class="divA1">
+                    <button class="planBtn" id="A1HA4">Ap- HA4</button>
+                </div>
+                <div class="divA1">
+                    <button class="planBtn" id="A1HA5">Ap- HA5</button>
+                </div>
+                <div id="godA2">GOD-A2</div>
+                <div class="divA2">
+                    <button class="planBtn" id="A2HA1">Ap- HA1</button>
+                </div>
+                <div class="divA2">
+                    <button class="planBtn" id="A2HA2">Ap- HA2</button>
+                </div>
+                <div class="divA2">
+                    <button class="planBtn" id="A2HA3">Ap- HA3</button>
+                </div>
+                <div class="divA2">
+                    <button class="planBtn" id="A2HA4">Ap- HA4</button>
+                </div>
+                <div class="divA2">
+                    <button class="planBtn" id="A2HA5">Ap- HA5</button>
+                </div>
+                <div id="godA3">GOD-A3</div>
+                <div class="divA3">
+                    <button class="planBtn" id="A3HA1">Ap- HA1</button>
+                </div>
+                <div class="divA3">
+                    <button class="planBtn" id="A3HA2">Ap- HA2</button>
+                </div>
+                <div class="divA3">
+                    <button class="planBtn" id="A3HA3">Ap- HA3</button>
+                </div>
+                <div class="divA3">
+                    <button class="planBtn" id="A3HA4">Ap- HA4</button>
+                </div>
+                <div class="divA3">
+                    <button class="planBtn" id="A3HA5">Ap- HA5</button>
+                </div>
+                <div id="godA4">GOD-A4</div>
+                <div class="divA4">
+                    <button class="planBtn" id="A4HA1">Ap- HA1</button>
+                </div>
+                <div class="divA4">
+                    <button class="planBtn" id="A4HA2">Ap- HA2</button>
+                </div>
+                <div class="divA4">
+                    <button class="planBtn" id="A4HA3">Ap- HA3</button>
+                </div>
+                <div class="divA4">
+                    <button class="planBtn" id="A4HA4">Ap- HA4</button>
+                </div>
+                <div class="divA4">
+                    <button class="planBtn" id="A4HA5">Ap- HA5</button>
+                </div>
+                <div id="godA5">GOD-A5</div>
+                <div class="divA5">
+                    <button class="planBtn" id="A5HA1">Ap- HA1</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A5HA2">Ap- HA2</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A5HA3">Ap- HA3</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A5HA4">Ap- HA4</button>
+                </div>
+                <div class="divA5">
+                    <button class="planBtn" id="A5HA5">Ap- HA5</button>
+                </div>
+                <div id="godA6">GOD-A6</div>
+                <div class="divA6">
+                    <button class="planBtn" id="A6HA1">Ap- HA1</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A6HA2">Ap- HA2</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A6HA3">Ap- HA3</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A6HA4">Ap- HA4</button>
+                </div>
+                <div class="divA6">
+                    <button class="planBtn" id="A6HA5">Ap- HA5</button>
+                </div>
+                <div id="godA7">GOD-A7</div>
+                <div class="divA7">
+                    <button class="planBtn" id="A7HA1">Ap- HA1</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A7HA2">Ap- HA2</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A7HA3">Ap- HA3</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A7HA4">Ap- HA4</button>
+                </div>
+                <div class="divA7">
+                    <button class="planBtn" id="A7HA5">Ap- HA5</button>
+                </div>
+                <div id="godA8">GOD-A8</div>
+                <div class="divA8">
+                    <button class="planBtn" id="A8HA1">Ap- HA1</button>
+                </div>
+                <div class="divA8">
+                    <button class="planBtn" id="A8HA2">Ap- HA2</button>
+                </div>
+                <div class="divA8">
+                    <button class="planBtn" id="A8HA3">Ap- HA3</button>
+                </div>
+                <div class="divA8">
+                    <button class="planBtn" id="A8HA4">Ap- HA4</button>
+                </div>
+                <div class="divA8">
+                    <button class="planBtn" id="A8HA5">Ap- HA5</button>
+                </div>
+                <div id="godA9">GOD-A9</div>
+                <div class="divA9">
+                    <button class="planBtn" id="A9HA1">Ap- HA1</button>
+                </div>
+                <div class="divA9">
+                    <button class="planBtn" id="A9HA2">Ap- HA2</button>
+                </div>
+                <div class="divA9">
+                    <button class="planBtn" id="A9HA3">Ap- HA3</button>
+                </div>
+                <div class="divA9">
+                    <button class="planBtn" id="A9HA4">Ap- HA4</button>
+                </div>
+                <div class="divA9">
+                    <button class="planBtn" id="A9HA5">Ap- HA5</button>
+                </div>
+                <div id="godA10">GOD-A10</div>
+                <div class="divA10">
+                    <button class="planBtn" id="A10HA1">Ap- HA1</button>
+                </div>
+                <div class="divA10">
+                    <button class="planBtn" id="A10HA2">Ap- HA2</button>
+                </div>
+                <div class="divA10">
+                    <button class="planBtn" id="A10HA3">Ap- HA3</button>
+                </div>
+                <div class="divA10">
+                    <button class="planBtn" id="A10HA4">Ap- HA4</button>
+                </div>
+                <div class="divA10">
+                    <button class="planBtn" id="A10HA5">Ap- HA5</button>
+                </div>
+                <div id="godA11">GOD-A11</div>
+                <div class="divA11">
+                    <button class="planBtn" id="A11HA1">Ap- HA1</button>
+                </div>
+                <div class="divA11">
+                    <button class="planBtn" id="A11HA2">Ap- HA2</button>
+                </div>
+                <div class="divA11">
+                    <button class="planBtn" id="A11HA3">Ap- HA3</button>
+                </div>
+                <div class="divA11">
+                    <button class="planBtn" id="A11HA4">Ap- HA4</button>
+                </div>
+                <div class="divA11">
+                    <button class="planBtn" id="A11HA5">Ap- HA5</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="tipolBlock">
+            <div id="containerB">
+                <button class="tipBtn" id="tipBtnB" onclick="showTableB">TIPOLOGJIA B</button>
+            </div>
+
+            <div class="tipologjiaB_Tul" id="tableB">
+
+
+                <div></div>
+                <div id="KatiB0">Kati 0</div>
+                <div id="KatiB1">Kati 1</div>
+                <div id="KatiB2">Kati 2</div>
+
+                <div id="godB1">B-01</div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB1">B1-01</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB2">B1-02</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB3">B1-03</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB4">B1-04</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB5">B1-05</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB6">B1-06</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB7">B1-07</button>
+                </div>
+                <div class="divB1">
+                    <button class="planBtn" id="B1HB8">B1-08</button>
+                </div>
+                <div id="godB2">B-02</div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB1">B2-01</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB2">B2-02</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB3">B2-03</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB4">B2-04</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB5">B2-05</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB6">B2-06</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB7">B2-07</button>
+                </div>
+                <div class="divB2">
+                    <button class="planBtn" id="B2HB8">B2-08</button>
+                </div>
+                <div id="godB3">B-03</div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB1">B3-01</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB2">B3-02</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB3">B3-03</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB4">B3-04</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB5">B3-05</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB6">B3-06</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB7">B3-07</button>
+                </div>
+                <div class="divB3">
+                    <button class="planBtn" id="B3HB8">B3-08</button>
+                </div>
+                <div id="godB4">B-04</div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB1">X</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB2">X</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB3">X</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB4">B4-04</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB5">B4-05</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB6">B4-06</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB7">B4-07</button>
+                </div>
+                <div class="divB4">
+                    <button class="planBtn" id="B4HB8">B4-08</button>
+                </div>
+                <div id="godB5">B-05</div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB1">B5-01</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB2">B5-02</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB3">B5-03</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB4">B5-04</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB5">B5-05</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB6">B5-06</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB7">B5-07</button>
+                </div>
+                <div class="divB5">
+                    <button class="planBtn" id="B5HB8">B5-08</button>
+                </div>
+                <div id="godB6">B-06</div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB1">B6-01</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB2">B6-02</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB3">X</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB4">B6-04</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB5">B6-05</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB6">B6-06</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB7">B6-07</button>
+                </div>
+                <div class="divB6">
+                    <button class="planBtn" id="B6HB8">B6-08</button>
+                </div>
+                <div id="godB7">B-07</div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB1">B7-01</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB2">B7-02</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB3">X</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB4">B7-04</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB5">B7-05</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB6">B7-06</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB7">B7-07</button>
+                </div>
+                <div class="divB7">
+                    <button class="planBtn" id="B7HB8">B7-08</button>
+                </div>
+            </div>
+        </div>
+        <div class="tipolBlock">
+            <div id="containerC">
+                <button class="tipBtn" id="tipBtnC" onclick="showTableC">TIPOLOGJIA C</button>
+            </div>
+
+            <div class="tipologjiaC_Tul" id="tableC">
+                <div></div>
+                <div id="KatiC0">Kati 0</div>
+                <div id="KatiC1">Kati 1</div>
+                <div id="KatiC2">Kati 2</div>
+                <div id="KatiC3">Kati 3</div>
+
+                <div id="godC1">C-01</div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC1">C1-01</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC2">X</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC3">X</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC4">X</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC5">C1-05</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC6">C1-06</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC7">C1-07</button>
+                </div>
+                <div class="divC1">
+                    <button class="planBtn" id="C1HC8">Pent-01</button>
+                </div>
+                <div id="godC2">C-02</div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC1">C2-01</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC2">C2-0</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC3">C2-03</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC4">C2-04</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC5">C2-05</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC6">C2-06</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC7">C2-07</button>
+                </div>
+                <div class="divC2">
+                    <button class="planBtn" id="C2HC8">Pent-02</button>
+                </div>
+                <div id="godC3">C-03</div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC1">C3-01</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC2">C3-02</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC3">C3-03</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC4">C3-04</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC5">C3-05</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC6">C3-06</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC7">C3-07</button>
+                </div>
+                <div class="divC3">
+                    <button class="planBtn" id="C3HC8">Pent-03</button>
+                </div>
+                <div id="godC4">C-04</div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC1">C4-01</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC2">C4-02</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC3">C4-03</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC4">C4-04</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC5">C4-05</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC6">C4-06</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC7">C4-07</button>
+                </div>
+                <div class="divC4">
+                    <button class="planBtn" id="C4HC8">Pent-04</button>
+                </div>
+                <div id="godC5">C-05</div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC1">C5-01</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC2">C5-02</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC3">C5-03</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC4">C5-04</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC5">C5-05</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC6">C5-06</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC7">C5-07</button>
+                </div>
+                <div class="divC5">
+                    <button class="planBtn" id="C5HC8">Pent-05</button>
+                </div>
+                <div id="godC6">C-06</div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC1">C6-01</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC2">C6-02</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC3">C6-03</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC4">C6-04</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC5">C6-05</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC6">C6-06</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC7">C6-07</button>
+                </div>
+                <div class="divC6">
+                    <button class="planBtn" id="C6HC8">Pent-06</button>
+                </div>
+                <div id="godC7">C-07</div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC1">C7-01</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC2">C7-02</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC3">C7-03</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC4">C7-04</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC5">C7-05</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC6">C7-06</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC7">C7-07</button>
+                </div>
+                <div class="divC7">
+                    <button class="planBtn" id="C7HC8">Pent-07</button>
+                </div>
+                <div id="godC8">C-08</div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC1">C8-01</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC2">C8-02</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC3">C8-03</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC4">C8-04</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC5">C8-05</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC6">C8-06</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC7">C8-07</button>
+                </div>
+                <div class="divC8">
+                    <button class="planBtn" id="C8HC8">Pent-08</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="imagePart">
+        <div id="shiturShkrimi" class="apartament-plan hidden">
+            SHITUR
+        </div>
+        <div id="rezervuarShkrimi" class="apartament-plan hidden">
+            REZERVUAR
+        </div>
+
+        <div id="fullscreenContainer" class="hidden">
+            <img id="fullscreenImage" src="" alt="Full Screen View">
+        </div>
+
+        <div class="detailsTable" id="plan-container">
+            <table id="plan-table">
+                <thead id="detailsTable">
+                    <tr>
+                        <th>Apartamenti</th>
+                        <th id="aptId"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="aparttId">Tipologjia</td>
+                        <td class="vleraSip" id="aptTypology"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Kati</td>
+                        <td class="vleraSip" id="aptFloor"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="aparttId">Godina</td>
+                        <td class="vleraSip" id="aptBuilding"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="aparttId">Siperfaqe e banueshme</td>
+                        <td class="vleraSip" id="aptNetArea"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Siperfaqe e perbashket</td>
+                        <td class="vleraSip" id="aptCommonArea"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Siperfaqe totale</td>
+                        <td class="vleraSip" id="aptTotalArea"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Siperfaqe verande</td>
+                        <td class="vleraSip" id="aptTerraceArea"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Oborr i gjebert</td>
+                        <td class="vleraSip" id="aptplotArea"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Parking Numer</td>
+                        <td class="vleraSip" id="parkingNumber"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                    <tr>
+                        <td class="aparttId">Statusi</td>
+                        <td class="vleraSip" id="status"></td>
+                        <td class="vleraFin"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <img id="display-image" src="" alt="Selected Plan" />
+        </div>
+    </div>
+
+    <script src="JSfolder/Tulipan.js"></script>
+
+</body>
+</html>
