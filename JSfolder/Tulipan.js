@@ -1,7 +1,6 @@
 ﻿
 
-const apartmentDetails = [
-
+const apartmentDetails = [ 
     { id: "A1HA1", Tipology: "1 + 1", building: "A1", floor: 0, NetArea: 72.48, ComonArea: 14.33, TotalArea: 86.81, GreenArea: 50.7, TerraceArea: 0, ParkingNumber: "BLLOKUAR", statusi: "Shitur", shenime: "TEKNOFIRE" },
     { id: "A1HA2", Tipology: "2 + 1", building: "A1", floor: 0, NetArea: 100.92, ComonArea: 19.95, TotalArea: 120.87, GreenArea: 81.4, TerraceArea: 25.9, ParkingNumber: "BLLOKUAR", statusi: "Shitur", shenime: "TEKNOFIRE" },
     { id: "A1HA3", Tipology: "1 + 1", building: "A1", floor: 1, NetArea: 76, ComonArea: 15.03, TotalArea: 91.03, GreenArea: 0, TerraceArea: 0, ParkingNumber: "BLLOKUAR", statusi: "Shitur", shenime: "TEKNOFIRE" },
@@ -109,11 +108,11 @@ const apartmentDetails = [
     { id: "B7HB6", Tipology: "2 + 1", building: "B7", floor: 1, NetArea: 127.05, ComonArea: 19.76, TotalArea: 146.81, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P02 02 - 15, 16", statusi: "Shitur", shenime: "EUGENT CAUSHI" },
     { id: "B7HB7", Tipology: "3 + 1", building: "B7", floor: 2, NetArea: 201.29, ComonArea: 31.31, TotalArea: 232.6, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P02 02 - 07, 08", statusi: "Shitur", shenime: "eringin avdo" },
     { id: "B7HB8", Tipology: "3 + 1", building: "B7", floor: 2, NetArea: 148.63, ComonArea: 23.12, TotalArea: 171.75, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P02 02 - 12, 13", statusi: "Shitur", shenime: "Edjola Diazi" },
-    { id: "C1HC1", Tipology: "3 + 1", building: "C1", floor: 0, NetArea: 126.18, ComonArea: 20.38, TotalArea: 146.56, GreenArea: ?, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
+    { id: "C1HC1", Tipology: "3 + 1", building: "C1", floor: 0, NetArea: 126.18, ComonArea: 20.38, TotalArea: 146.56, GreenArea: 0, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
     { id: "C1HC38048", Tipology: "x", building: "C1", floor: 1, NetArea: 294.34, ComonArea: 0, TotalArea: 294.34, GreenArea: 0, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
     { id: "C1HC5", Tipology: "2 + 1", building: "C1", floor: 2, NetArea: 124.04, ComonArea: 20.04, TotalArea: 144.08, GreenArea: 0, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
-    { id: "C1HC6", Tipology: "1 + 1", building: "C1", floor: 2, NetArea: 67.99, ComonArea: 10.98, TotalArea: 78.97, GreenArea: ?, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
-    { id: "C1HC7", Tipology: "2 + 1", building: "C1", floor: 2, NetArea: 108.98, ComonArea: 17.61, TotalArea: 126.59, GreenArea: ?, TerraceArea: 0, ParkingNumber: "P08 01 64, 65", statusi: "Shitur", shenime: "BASHKIM PROGRI" },
+    { id: "C1HC6", Tipology: "1 + 1", building: "C1", floor: 2, NetArea: 67.99, ComonArea: 10.98, TotalArea: 78.97, GreenArea: 0, TerraceArea: 0, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
+    { id: "C1HC7", Tipology: "2 + 1", building: "C1", floor: 2, NetArea: 108.98, ComonArea: 17.61, TotalArea: 126.59, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P08 01 64, 65", statusi: "Shitur", shenime: "BASHKIM PROGRI" },
     { id: "C1HC8", Tipology: "3 + 1", building: "C1", floor: 3, NetArea: 247.4, ComonArea: 26, TotalArea: 273, GreenArea: 0, TerraceArea: 89.1, ParkingNumber: "P08 01 66, 67", statusi: "Shitur", shenime: "Vladimir Bajraktari" },
     { id: "C2HC1", Tipology: "3 + 1", building: "C2", floor: 0, NetArea: 126.18, ComonArea: 20.38, TotalArea: 146.56, GreenArea: 107.8, TerraceArea: 0, ParkingNumber: "P08 01 1, 2", statusi: "Shitur", shenime: "DASHAMIR MUSTAFA" },
     { id: "C2HC2", Tipology: "2 + 1", building: "C2", floor: 1, NetArea: 125.61, ComonArea: 20.29, TotalArea: 145.9, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P08 01 79, 80", statusi: "Shitur", shenime: "Endri Mezura" },
@@ -171,9 +170,6 @@ const apartmentDetails = [
     { id: "C8HC6", Tipology: "1 + 1", building: "C8", floor: 2, NetArea: 67.99, ComonArea: 10.98, TotalArea: 78.97, GreenArea: 0, TerraceArea: 0, ParkingNumber: "P04 01 - 16", statusi: "Shitur", shenime: "Behar Sinakolli" },
     { id: "C8HC7", Tipology: "2 + 1", building: "C8", floor: 2, NetArea: 108.98, ComonArea: 17.61, TotalArea: 126.59, GreenArea: 70, TerraceArea: 0, ParkingNumber: "", statusi: "Shitur", shenime: "Klaudia Ballari" },
     { id: "C8HC8", Tipology: "3 + 1", building: "C8", floor: 3, NetArea: 247.4, ComonArea: 26, TotalArea: 273, GreenArea: 0, TerraceArea: 89.1, ParkingNumber: "", statusi: "Per shitje", shenime: "" },
-
-
-
 
 ]
 
